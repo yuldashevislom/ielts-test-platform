@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>IELTS Test - Start</title>
+   <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+   <div class="admin-link">
+      <button id="adminBtn">Admin</button>
+   </div>
+   <div class="container start-page">
+      <div class="card start-card">
+         <h1>IELTS Test</h1>
+         <p>Iltimos, FIO kiriting.</p>
+
+         <form id="startForm" class="form">
+            <div class="form-group">
+               <label for="userName">FIO</label>
+               <input type="text" id="userName" maxlength="120" autocomplete="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+               <label for="examType">Test turi</label>
+               <select id="examType" name="examType">
+                  <option value="writing">Writing</option>
+                  <option value="reading">Reading — 40 questions</option>
+                  <option value="listening">Listening — 40 questions</option>
+               </select>
+            </div>
+            <p class="exam-hint">Ism-familiyangiz va javoblaringiz test yakunida o‘qituvchiga yuboriladi.</p>
+            <div class="form-actions single-button">
+               <button type="submit">Imtihonni boshlash</button>
+            </div>
+         </form>
+
+         <div id="startMessage" class="message"></div>
+      </div>
+   </div>
+
+   <script src="./js/storage.js"></script>
+   <script src="./js/start.js"></script>
+</body>
+
+</html>

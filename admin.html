@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Admin Panel - Writing Test</title>
+   <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+   <div class="container admin-page">
+      <div class="card">
+         <h1>Ustoz Paneli</h1>
+         <p>O'quvchilar uchun Writing Task yaratish paneli</p>
+
+         <form id="taskForm" class="form">
+
+            <h2>Part 1</h2>
+
+            <div class="form-group">
+               <label for="part1Title">Part 1 Title</label>
+               <input type="text" id="part1Title" placeholder="Enter Part 1 title" required />
+            </div>
+
+            <div class="form-group">
+               <label for="part1Instruction">Part 1 Instruction</label>
+               <textarea id="part1Instruction" rows="3" placeholder="Enter Part 1 instruction..." required></textarea>
+            </div>
+
+            <div class="form-group">
+               <label for="part1Question">Part 1 Savol</label>
+               <textarea id="part1Question" rows="5" placeholder="Enter Part 1 question..." required></textarea>
+            </div>
+
+            <div class="form-group">
+               <label for="part1Image">Part 1 Rasm yuklash</label>
+               <input type="file" id="part1Image" accept="image/*" />
+            </div>
+
+            <hr style="margin: 20px 0; opacity: 0.3;">
+
+            <h2>Part 2</h2>
+
+            <div class="form-group">
+               <label for="part2Title">Part 2 Title</label>
+               <input type="text" id="part2Title" placeholder="Enter Part 2 title" required />
+            </div>
+
+            <div class="form-group">
+               <label for="part2Instruction">Part 2 Instruction</label>
+               <textarea id="part2Instruction" rows="3" placeholder="Enter Part 2 instruction..." required></textarea>
+            </div>
+
+            <div class="form-group">
+               <label for="part2Question">Part 2 Savol</label>
+               <textarea id="part2Question" rows="5" placeholder="Enter Part 2 question..." required></textarea>
+            </div>
+
+            <div class="form-group">
+               <label for="part2Image">Part 2 Rasm yuklash</label>
+               <input type="file" id="part2Image" accept="image/*" />
+            </div>
+
+            <hr style="margin: 20px 0; opacity: 0.3;">
+
+            <div class="form-group">
+               <label for="duration">Umumiy vaqt (minutda)</label>
+               <input type="number" id="duration" min="1" value="60" required />
+            </div>
+
+            <div class="form-actions">
+               <button type="submit">Task ni saqlash</button>
+               <button type="button" id="clearTaskBtn">Task ni tozalash</button>
+            </div>
+         </form>
+
+         <div id="message" class="message"></div>
+      </div>
+
+      <div class="card preview-card">
+         <h2>Saved Task Preview</h2>
+         <div id="previewContent">
+            <p>No task saved yet.</p>
+         </div>
+      </div>
+   </div>
+
+   <script src="./js/storage.js"></script>
+   <script src="./js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.header { gap: 12px; }
+.exam-home { text-decoration: none; color: inherit; white-space: nowrap; }
+#candidate-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 240px; font-size: 14px; }
+#exam-countdown { font-variant-numeric: tabular-nums; white-space: nowrap; }
+#submission-status { padding: 14px 18px; margin: 14px 0; background: #edf5ff; border-radius: 8px; color: #173a64; }
+#submission-status.error { background: #fff1f0; color: #9b2424; }
+#submission-status button { margin-top: 10px; padding: 9px 18px; border: 0; background: #164c91; color: white; border-radius: 6px; cursor: pointer; }
+#result-details td { overflow-wrap: anywhere; max-width: 300px; }
+#result-details { overflow-x: auto; }
+@media (max-width: 650px) { .header { flex-wrap: wrap; height: auto; min-height: 60px; padding: 8px; } .header .telegram-link { display: none; } #candidate-name { max-width: 150px; } }

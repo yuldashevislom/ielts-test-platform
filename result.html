@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Result</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+   <div class="container result-page">
+      <div class="card">
+         <h1>Bajarilgan ish</h1>
+
+         <div class="result-info">
+            <p>
+               <strong>Talaba:</strong>
+               <span id="resultUser"></span>
+            </p>
+
+            <p>
+               <strong>Sarflangan vaqt:</strong>
+               <span id="resultTime"></span> seconds
+            </p>
+
+            <p>
+               <strong>Auto topshirilgan:</strong>
+               <span id="resultAuto"></span>
+            </p>
+         </div>
+
+         <h3 id="resultPart1Title">Part 1</h3>
+         <div id="resultPart1Answer" class="result-answer"></div>
+
+         <h3 id="resultPart2Title" style="margin-top: 20px;">Part 2</h3>
+         <div id="resultPart2Answer" class="result-answer"></div>
+
+         <button id="backBtn">Ortga qaytish</button>
+      </div>
+   </div>
+
+   <script src="./js/storage.js"></script>
+   <script src="./js/result.js"></script>
+
+</body>
+
+</html>

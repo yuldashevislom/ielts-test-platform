@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Writing Exam</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+   <div class="exam-container">
+
+      <div class="task-section">
+         <h2 id="taskTitle"></h2>
+
+         <p id="taskInstruction"></p>
+
+         <p id="taskQuestion"></p>
+
+         <img id="taskImage" class="task-image" />
+      </div>
+
+      <div class="answer-section">
+
+         <div class="exam-header">
+            <div>
+               User: <strong id="userName"></strong>
+            </div>
+
+            <div class="timer" id="timer">
+               60:00
+            </div>
+         </div>
+
+         <div class="part-tabs">
+            <button type="button" id="part1TabBtn" class="part-tab-btn active-part-btn">Part 1</button>
+            <button type="button" id="part2TabBtn" class="part-tab-btn">Part 2</button>
+         </div>
+
+         <textarea id="answerBox" placeholder="Write your answer here..."></textarea>
+
+         <div class="exam-info">
+            <div id="wordCount">Words: 0</div>
+            <div id="wordWarning"></div>
+            <div id="saveStatus">Saved ✓</div>
+         </div>
+
+         <div class="exam-footer">
+            <button id="submitBtn">Submit</button>
+         </div>
+
+      </div>
+
+   </div>
+
+   <script src="./js/storage.js"></script>
+   <script src="./js/submit-client.js"></script>
+   <script src="./js/exam.js"></script>
+
+</body>
+
+</html>
