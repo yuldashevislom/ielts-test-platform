@@ -28,7 +28,7 @@ function prepareSubmission(data) {
          report += `\n\n${partTitle}\nWords: ${answer ? answer.split(/\s+/).length : 0}\n\n${answer || 'Javob yozilmagan.'}`;
       }
    } else {
-      if (data.testId !== `${examType}-sample-v1`) throw new Error('Test versiyasi topilmadi. Bosh sahifadan qayta kiring.');
+      if (data.testId !== exams[examType].testId) throw new Error('Test versiyasi topilmadi. Bosh sahifadan qayta kiring.');
       if (!data.answers || typeof data.answers !== 'object' || Array.isArray(data.answers)) throw new Error('Javoblar noto‘g‘ri.');
       const exam = exams[examType];
       let score = 0;

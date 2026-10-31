@@ -11,7 +11,7 @@ afterEach(() => {
    if (oldToken === undefined) delete process.env.TELEGRAM_BOT_TOKEN; else process.env.TELEGRAM_BOT_TOKEN = oldToken;
    if (oldChat === undefined) delete process.env.TELEGRAM_CHAT_ID; else process.env.TELEGRAM_CHAT_ID = oldChat;
 });
-const data = (type, answers = {}) => ({ examType: type, testId: `${type}-sample-v1`, name: 'Islom Test', timeUsed: 123, answers });
+const data = (type, answers = {}) => ({ examType: type, testId: keys[type].testId, name: 'Islom Test', timeUsed: 123, answers });
 const request = body => ({ httpMethod: 'POST', body: JSON.stringify(body) });
 for (const type of ['reading', 'listening']) {
    test(`${type}: all correct answers score 40; blank answers score 0`, () => {
@@ -24,15 +24,13 @@ for (const type of ['reading', 'listening']) {
       assert.match(full.report, /Islom Test/);
    });
 }
-test('Grouped answers receive partial credit and reject too many / duplicate selections', () => {
-   const result = prepareSubmission(data('reading', { 'q20-21': ['B', 'D'] })).result;
-   assert.equal(result.score, 1);
-   assert.equal(result.results.find(r => r.question === '20-21').points, 1);
-   assert.throws(() => prepareSubmission(data('reading', { 'q20-21': ['B', 'B'] })));
-   assert.throws(() => prepareSubmission(data('reading', { 'q20-21': ['A', 'B', 'C'] })));
+test('New test versions reject previous submissions', () => {
+   for (const type of ['reading', 'listening']) {
+      assert.throws(() => prepareSubmission({ ...data(type), testId: `${type}-sample-v1` }));
+   }
 });
 test('Text normalization and server-owned scores', () => {
-   const result = prepareSubmission({ ...data('listening', { q2: '  SERVICE   MANAGER ' }), score: 40 }).result;
+   const result = prepareSubmission({ ...data('listening', { q2: '  10   OCTOBER ' }), score: 40 }).result;
    assert.equal(result.score, 1);
 });
 test('Invalid requests are rejected before Telegram access', async () => {
@@ -48,7 +46,7 @@ test('Success requires Telegram ok=true, even with HTTP 200', async () => {
    global.fetch = async () => ({ ok: true, json: async () => ({ ok: false, description: 'denied' }) });
    assert.equal((await handler(request(data('reading')))).statusCode, 502);
    global.fetch = async () => ({ ok: true, json: async () => ({ ok: true, result: { message_id: 42 } }) });
-   const response = await handler(request(data('listening', { q1: 'cousin' })));
+   const response = await handler(request(data('listening', { q1: '219 442 9785' })));
    assert.equal(response.statusCode, 200);
    assert.equal(JSON.parse(response.body).result.score, 1);
 });

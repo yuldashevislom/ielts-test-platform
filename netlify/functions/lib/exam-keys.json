@@ -1,222 +1,47 @@
 {
   "reading": {
+    "testId": "reading-cambridge-13-test-2-v1",
     "answers": {
-      "q1": "TRUE",
-      "q2": "FALSE",
-      "q3": "FALSE",
-      "q4": "NOT GIVEN",
-      "q5": "NOT GIVEN",
-      "q6": "FALSE",
-      "q7": "TRUE",
-      "q8": [
-        "cattle herds",
-        "cattle herd"
-      ],
-      "q9": [
-        "winds",
-        "wind"
-      ],
-      "q10": [
-        "lake sediments",
-        "lake sediment"
-      ],
-      "q11": [
-        "size"
-      ],
-      "q12": [
-        "nutrients",
-        "nutrient"
-      ],
-      "q13": [
-        "glaciers",
-        "glacier"
-      ],
-      "q14": "iv",
-      "q15": "viii",
-      "q16": "i",
-      "q17": "vii",
-      "q18": "iii",
-      "q19": "v",
-      "q20-21": [
-        "B",
-        "C"
-      ],
-      "q22-23": [
-        "A",
-        "D"
-      ],
-      "q24": [
-        "meadow"
-      ],
-      "q25": [
-        "museum"
-      ],
-      "q26": [
-        "edges",
-        "edge"
-      ],
-      "q27": "A",
+      "q1": "oils",
+      "q2": "friendship",
+      "q3": "funerals",
+      "q4": "wealth",
+      "q5": "indigestion",
+      "q6": "India",
+      "q7": "camels",
+      "q8": "Alexandria",
+      "q9": "Venice",
+      "q10": "TRUE",
+      "q11": "FALSE",
+      "q12": "NOT GIVEN",
+      "q13": "FALSE",
+      "q14": "B",
+      "q15": "F",
+      "q16": "B",
+      "q17": "E",
+      "q18": "A",
+      "q19": "B",
+      "q20": "C",
+      "q21": "animals",
+      "q22": "childbirth",
+      "q23": "placebo",
+      "q24": "game",
+      "q25": "strangers",
+      "q26": "names",
+      "q27": "D",
       "q28": "C",
-      "q29": "D",
-      "q30": "A",
-      "q31": "B",
-      "q32": "NO",
-      "q33": "YES",
-      "q34": "NOT GIVEN",
-      "q35": "YES",
-      "q36": "B",
-      "q37": "G",
-      "q38": "A",
-      "q39": "D",
-      "q40": "C"
-    },
-    "types": {
-      "q1": "tf",
-      "q2": "tf",
-      "q3": "tf",
-      "q4": "tf",
-      "q5": "tf",
-      "q6": "tf",
-      "q7": "tf",
-      "q8": "text",
-      "q9": "text",
-      "q10": "text",
-      "q11": "text",
-      "q12": "text",
-      "q13": "text",
-      "q14": "table",
-      "q15": "table",
-      "q16": "table",
-      "q17": "table",
-      "q18": "table",
-      "q19": "table",
-      "q20-21": "checkbox",
-      "q22-23": "checkbox",
-      "q24": "text",
-      "q25": "text",
-      "q26": "text",
-      "q27": "mcq",
-      "q28": "mcq",
-      "q29": "mcq",
-      "q30": "mcq",
-      "q31": "mcq",
-      "q32": "tf",
-      "q33": "tf",
-      "q34": "tf",
-      "q35": "tf",
-      "q36": "table",
-      "q37": "table",
-      "q38": "table",
-      "q39": "table",
-      "q40": "table"
-    }
-  },
-  "listening": {
-    "answers": {
-      "q1": [
-        "cousin"
-      ],
-      "q2": [
-        "service manager"
-      ],
-      "q3": [
-        "50",
-        "£50",
-        "fifty",
-        "50 pounds"
-      ],
-      "q4": [
-        "private company"
-      ],
-      "q5": [
-        "mobile",
-        "mobile phone"
-      ],
-      "q6": [
-        "agreement"
-      ],
-      "q7": "B",
-      "q8": "C",
-      "q9": "A",
-      "q10": "C",
-      "q11": "B",
-      "q12": "C",
-      "q13": "A",
-      "q14": "C",
-      "q15": "B",
-      "q16": "C",
-      "q17-18": [
-        "B",
-        "D"
-      ],
-      "q19-20": [
-        "A",
-        "D"
-      ],
-      "q21": [
-        "early evening",
-        "the early evening"
-      ],
-      "q22": [
-        "seminar group"
-      ],
-      "q23": [
-        "list of objectives"
-      ],
-      "q24": [
-        "project outline"
-      ],
-      "q25": [
-        "checklist",
-        "check list"
-      ],
-      "q26": [
-        "wide reading"
-      ],
-      "q27": [
-        "design research"
-      ],
-      "q28": [
-        "a clear argument",
-        "clear argument"
-      ],
-      "q29": [
-        "theory chapters"
-      ],
-      "q30": [
-        "studentlink"
-      ],
-      "q31": [
-        "connected"
-      ],
-      "q32": [
-        "learning"
-      ],
-      "q33": [
-        "laboratories"
-      ],
-      "q34": [
-        "background"
-      ],
-      "q35": [
-        "passive"
-      ],
-      "q36": [
-        "personality"
-      ],
-      "q37": [
-        "self-centred",
-        "self-centered",
-        "self centred",
-        "self centered"
-      ],
-      "q38": [
-        "stimulation"
-      ],
-      "q39": [
-        "house"
-      ],
-      "q40": "C"
+      "q29": "A",
+      "q30": "D",
+      "q31": "D",
+      "q32": "D",
+      "q33": "C",
+      "q34": "B",
+      "q35": "A",
+      "q36": "C",
+      "q37": "A",
+      "q38": "B",
+      "q39": "C",
+      "q40": "D"
     },
     "types": {
       "q1": "text",
@@ -225,9 +50,9 @@
       "q4": "text",
       "q5": "text",
       "q6": "text",
-      "q7": "mcq",
-      "q8": "mcq",
-      "q9": "mcq",
+      "q7": "text",
+      "q8": "text",
+      "q9": "text",
       "q10": "mcq",
       "q11": "mcq",
       "q12": "mcq",
@@ -235,12 +60,112 @@
       "q14": "mcq",
       "q15": "mcq",
       "q16": "mcq",
-      "q17-18": "checkbox",
-      "q19-20": "checkbox",
+      "q17": "mcq",
+      "q18": "mcq",
+      "q19": "mcq",
+      "q20": "mcq",
       "q21": "text",
       "q22": "text",
       "q23": "text",
       "q24": "text",
+      "q25": "text",
+      "q26": "text",
+      "q27": "mcq",
+      "q28": "mcq",
+      "q29": "mcq",
+      "q30": "mcq",
+      "q31": "mcq",
+      "q32": "mcq",
+      "q33": "mcq",
+      "q34": "mcq",
+      "q35": "mcq",
+      "q36": "mcq",
+      "q37": "mcq",
+      "q38": "text",
+      "q39": "text",
+      "q40": "text"
+    }
+  },
+  "listening": {
+    "testId": "listening-cambridge-14-test-2-v1",
+    "answers": {
+      "q1": [
+        "219 442 9785",
+        "2194429785"
+      ],
+      "q2": [
+        "10 October",
+        "10th October",
+        "October 10",
+        "October 10th"
+      ],
+      "q3": "manager",
+      "q4": "Cawley",
+      "q5": "knee",
+      "q6": [
+        "3 weeks",
+        "three weeks"
+      ],
+      "q7": "tennis",
+      "q8": "running",
+      "q9": "shoulder",
+      "q10": "vitamins",
+      "q11": "B",
+      "q12": "C",
+      "q13": "C",
+      "q14": "B",
+      "q15": "A",
+      "q16": "H",
+      "q17": "D",
+      "q18": "F",
+      "q19": "A",
+      "q20": "E",
+      "q21": "B",
+      "q22": "C",
+      "q23": "A",
+      "q24": "A",
+      "q25": "E",
+      "q26": "D",
+      "q27": "A",
+      "q28": "H",
+      "q29": "G",
+      "q30": "C",
+      "q31": "dances",
+      "q32": "survival",
+      "q33": "clouds",
+      "q34": "festivals",
+      "q35": "comets",
+      "q36": "sky",
+      "q37": "instruments",
+      "q38": "thermometer",
+      "q39": "storms",
+      "q40": "telegraph"
+    },
+    "types": {
+      "q1": "text",
+      "q2": "text",
+      "q3": "text",
+      "q4": "text",
+      "q5": "text",
+      "q6": "text",
+      "q7": "text",
+      "q8": "text",
+      "q9": "text",
+      "q10": "text",
+      "q11": "mcq",
+      "q12": "mcq",
+      "q13": "mcq",
+      "q14": "mcq",
+      "q15": "mcq",
+      "q16": "mcq",
+      "q17": "mcq",
+      "q18": "mcq",
+      "q19": "mcq",
+      "q20": "mcq",
+      "q21": "mcq",
+      "q22": "mcq",
+      "q23": "mcq",
+      "q24": "mcq",
       "q25": "text",
       "q26": "text",
       "q27": "text",
@@ -256,7 +181,7 @@
       "q37": "text",
       "q38": "text",
       "q39": "text",
-      "q40": "mcq"
+      "q40": "text"
     }
   }
 }
